@@ -1,5 +1,6 @@
-<cfinclude template="/models/services/global/settings.cfm">
 <cfscript>
+	
+	include "/models/services/global/settings.cfm";
 
 	set(sendEmailOnError=true);
 	set(errorEmailAddress=application.wheels.adminFromEmail);
