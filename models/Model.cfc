@@ -1,4 +1,3 @@
-<cfscript>
 component extends="Wheels"
 {
 	function init() {
@@ -157,4 +156,3 @@ component extends="Wheels"
 	}
 
 }
-</cfscript>

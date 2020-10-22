@@ -1,7 +1,6 @@
-<cfscript>
-// Github won't syntax highlight this unless I wrap it in cfscript..bleh
 component {
 
+// Github won't syntax highlight this unless I wrap it in cfscript..bleh
 
 	public smtpApiHeader function init() {
 		variables.data = {};
@@ -97,4 +96,3 @@ component {
 	}
 
 }
-</cfscript>

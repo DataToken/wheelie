@@ -6,6 +6,7 @@
 	
 	function setRuntimeSettings() {
 		if(!application.containsKey("runtimeconfig") OR !isNull(url.reload)) {
+			
 			application.runtimeconfig = {};
 
 			try {

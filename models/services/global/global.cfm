@@ -1,6 +1,4 @@
-﻿<cfoutput>
-
-	<!--- Globals: All values and functions are available to all parts of the app --->
+﻿	<!--- Globals: All values and functions are available to all parts of the app --->
 	<cfscript>
 		// Set app functions
 		// ---------------------------------------
@@ -41,9 +39,8 @@
 
 		// Make them accessible from local scope
 		include "/models/services/global/init/setservices.cfm";
-	</cfscript>
-	
-	<!--- Custom Overrides --->
-	<cfinclude template="/models/services/global/app/app.cfm">
 
-</cfoutput>
+	
+		// Custom Overrides
+	include "/models/services/global/app/app.cfm";
+	</cfscript>

@@ -1,11 +1,10 @@
 <cfscript>
+	this.name 				= "Wheelie";
 	include "/models/services/global/app/systemvars.cfm";
 	this.runtimeconfig = setRuntimeSettings();
-	this.applicationTimeout = createTimespan(30,0,0,0);
+	this.applicationTimeout = createTimespan(10,0,0,0);
 	this.sessionManagement 	= "true";
-	this.sessionTimeout 	= createTimeSpan(30,0,0,0);
-	
-	this.name 				= "Wheelie";
+	this.sessionTimeout 	= createTimeSpan(10,0,0,0);
 	rootPath 				= getDirectoryFromPath(getBaseTemplatePath());
 
 	request.wheelieInDocker = len(getSiteSetting('WHEELIE_DATASOURCE')) && len(getSiteSetting('WHEELIE_DATABASE'));

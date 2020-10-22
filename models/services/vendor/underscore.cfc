@@ -1,10 +1,15 @@
-<cfscript>
-/**
+component {
+
+/** 
 * @name Underscore.cfc
 * @hint A port of Underscore.js for Coldfusion
-* @introduction Underscore.cfc is a port of <a href="http://underscorejs.org">Underscore.js</a> for Coldfusion. It is a utility-belt library that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby). <br /><br />Underscore.cfc provides dozens of functions that support both the usual functional suspects: map, select, invoke - as well as more specialized helpers: function binding, sorting, deep equality testing, and so on. It delegates to built-in functions where applicable.<br /><br />Underscore.cfc is compatible with Adobe Coldfusion 10 and Railo 4.<br /><br />The project is <a href="http://github.com/russplaysguitar/underscorecf">hosted on GitHub</a>. Contributions are welcome.<br />
+* @introduction Underscore.cfc is a port of 
+	LINK: http://underscorejs.org (Underscore JS) for Coldfusion. 
+	It is a utility-belt library that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby).
+	Underscore.cfc provides dozens of functions that support both the usual functional suspects: map, select, invoke - as well as more specialized helpers: function binding, sorting, deep equality testing, and so on. 
+	It delegates to built-in functions where applicable.<br /><br />Underscore.cfc is compatible with Adobe Coldfusion 10 and Railo 4.
+	The project is LINK http://github.com/russplaysguitar/underscorecf
 */
-component {
 
 	public any function init(obj = {}) {
 		this.obj = arguments.obj;
@@ -25,7 +30,6 @@ component {
 	}
 
 	/* COLLECTION FUNCTIONS (ARRAYS, STRUCTURES, OR OBJECTS) */
-
 	/**
 	* 	@header _.each(collection, iterator, [context]) : void
 	*	@hint Iterates over a collection of elements, yielding each in turn to an iterator function. The iterator is bound to the context object (component or struct), if one is passed. Each invocation of iterator is called with three arguments: (element, index, collection, this). If collection is an object/struct, iterator's arguments will be (value, key, collection, this).
@@ -2005,5 +2009,3 @@ component {
 		return !!arguments.obj;
 	}
 }
-
-</cfscript>

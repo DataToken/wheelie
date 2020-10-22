@@ -1,9 +1,9 @@
 <cfscript>
-	include template="/models/services/global/app/systemvars.cfm";
+	include "/models/services/global/app/systemvars.cfm";
 	application.runtimeconfig = setRuntimeSettings();
 
-	application.wheels.reloadPassword 	= getSiteSetting("WHEELIE_APPRELOADPASS","wheelie");
-	application.wheels.dataSourceName	= getSiteSetting("WHEELIE_DATASOURCE","wheelie");
+	application.wheels.reloadPassword 	= getSiteSetting("WHEELIE_APPRELOADPASS","reload");
+	application.wheels.dataSourceName	= getSiteSetting("WHEELIE_DATASOURCE","cfdnd");
 
 	application.wheels.youtubeDevKey	= getSiteSetting("youtubeDevKey");
 	application.wheels.stripeKey		= getSiteSetting("stripeKey");

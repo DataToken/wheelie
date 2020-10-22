@@ -1,5 +1,5 @@
 <cfscript>
-	include template="/views/setup/check.cfm";
+	include "/views/setup/check.cfm";
 	setSiteInfo();
 
 	include "/models/services/global/settings.cfm";

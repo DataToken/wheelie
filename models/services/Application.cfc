@@ -1,5 +1,3 @@
-<cfscript>
 component {
 
 }
-</cfscript>

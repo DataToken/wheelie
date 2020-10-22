@@ -1,15 +1,15 @@
 <cfscript>
-	include template="/views/setup/check.cfm";
+	include "/views/setup/check.cfm";
 
 	// Initialize Shortcode plugins
-	include template="/models/services/global/settings.cfm";
+	include "/models/services/global/settings.cfm";
 
 	setSiteInfo();
 
 	//  Set User Permissions
 	if ( isNull(application.rbs.permissionsQuery) || isReload ) {
 
-		var q = new query( datasource="wheelie" );
+		var q = new query( datasource="cfdnd" );
 		        q.addParam( name="lastModifiedTime", cfsqltype="cf_sql_timestamp", value=now());
 		        application.rbs.permissionsQuery = q.execute( sql="SELECT * FROM permissions" ).getResult();
 		//  Get role columns from permissions table - removed non role columns - convert array to remove list nulls - convert back to list
@@ -23,5 +23,5 @@
 	}
 
 	application.shortcodes={};
-	include template="/views/plugins/plugins-init.cfm";
+	include "/views/plugins/plugins-init.cfm";
 </cfscript>

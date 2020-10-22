@@ -19,3 +19,5 @@ Version 1.0 - 9/20/2008 - Release!
       Enhancements under consideration
 /---------^---------------------------------------------------------------------------------------\
 "Bridging" numbers like amazon - 1 number out of range will show if it bridges the "..." gap.
+--->
+</cfcomponent>

@@ -1,4 +1,3 @@
-
 <cfcomponent
 	output="false"
 	hint="Handles a CFHTTP session by sending an receving cookies behind the scenes.">

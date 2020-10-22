@@ -45,7 +45,7 @@
 				throw("#application.wheels.dbtype# is not supported by Wheelie. Feel free to add support and send pull request.");
 			}
 		} else if(!tableExists) {
-			include template="/views/setup/dbconfirm.cfm"; abort;
+			include "/views/setup/dbconfirm.cfm"; abort;
 		} else {
 			application.dbSetupCheck = true;
 		}
@@ -79,7 +79,7 @@
 		} catch(any e) {
 			// Notify dev that he needs to setup his Datasource
 			if(findNoCase("datasource",e.message)) {
-				include template="/views/setup/datasource.cfm"; abort;
+				include "/views/setup/datasource.cfm"; abort;
 			}
 			// Notify dev that his Datasource can't connect to the DB
 			if(findNoCase("Communications link failure",e.message)) {
