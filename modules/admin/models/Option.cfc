@@ -1,6 +1,5 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
-		function init() {
+component extends="models.Model"{
+		function init() { 
 			// Properties
 			this.setWhere = setWhere;
 
@@ -74,10 +73,9 @@
 						}
 					}
 
-				} catch(e) {
+				} catch(any e) {
 					writeDump(e);abort;
 				}
 			}
 		}
-	</cfscript>
-</cfcomponent>
+}

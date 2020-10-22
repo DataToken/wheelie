@@ -1,4 +1,3 @@
-<cfscript>
 component extends="_main" output="false"
 {
 	function init() {
@@ -110,4 +109,3 @@ component extends="_main" output="false"
 		redirectTo(route="admin~id", module="admin", controller="formFields", action="index", id=params.formid);
 	}
 }
-</cfscript>

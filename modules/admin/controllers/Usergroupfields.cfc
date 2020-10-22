@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -110,4 +108,3 @@ component extends="_main" output="false"
 		redirectTo(route="admin~id", module="admin", controller="UsergroupFields", action="index", id=params.usergroupid);
 	}
 }
-</cfscript>

@@ -1,5 +1,4 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			super.init();
 
@@ -11,6 +10,4 @@
 			belongsTo(name="UserGroup", foreignKey="usergroupid");
 
 		}
-	</cfscript>
-
-</cfcomponent>
+}

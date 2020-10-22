@@ -1,5 +1,4 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			// Set
 			table("usergroups");
@@ -21,5 +20,4 @@
 		function setWhere() {
 			return "#wherePermission('Usergroup')#";
 		}
-	</cfscript>
-</cfcomponent>
+}

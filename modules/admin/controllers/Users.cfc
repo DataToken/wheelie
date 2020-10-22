@@ -1,5 +1,4 @@
-<cfscript>
-	component extends="_main"
+component extends="_main"
 	{
 		function init() {
 			super.init();
@@ -178,7 +177,7 @@
 					approvalToggle = "";
 				}
 
-				var result = fileUpload(getTempDirectory(),arguments.field, "image/*", "makeUnique");
+				var result = fileUpload(getTempDirectory(),arguments.field, "image/", "makeUnique");
 				if(result.fileWasSaved) {
 					var theFile = result.serverdirectory & "/" & result.serverFile;
 					var newFile = expandThis("/assets/userpics#approvalToggle#/#loc.user.id#.jpg");
@@ -193,7 +192,7 @@
 							imageScaleToFit(img, 250, 250);
 							imageWrite(img,newFile,1);
 							fileDelete(theFile);
-						} catch(e) {
+						} catch(any e) {
 							throw(e);
 							flashInsert(error="File Error: #e.message#");
 							return false;
@@ -483,4 +482,3 @@
 
 		}
 	}
-</cfscript>

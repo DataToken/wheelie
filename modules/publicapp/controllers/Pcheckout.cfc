@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 		filters(through="loggedOutOnly",except="login,loginPost,registerPost");
@@ -63,7 +61,7 @@ component extends="_main" output="false"
 								'stripe_vendor_active' = 0
 							});
 						}
-					} catch(e) {
+					} catch(any e) {
 						writeDump(vendor);
 						writeDump(e); abort;
 					}
@@ -280,4 +278,3 @@ component extends="_main" output="false"
 		return local.amount;
 	}
 }
-</cfscript>

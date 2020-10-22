@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="models.Model"
-	{
+component extends="models.Model"{
 		function init() {
 			// Properties
 			property(name="postType", defaultValue="page");
@@ -30,4 +28,3 @@
 			}
 		}
 	}
-</cfscript>

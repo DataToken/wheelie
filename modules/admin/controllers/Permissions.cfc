@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="_main"
-	{
+component extends="_main"{
 		function init() {
 			super.init();
 		}
@@ -26,4 +24,3 @@
 			}
 		}
 	}
-</cfscript>

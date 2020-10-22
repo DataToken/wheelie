@@ -1,6 +1,5 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
-		function init() {
+component extends="models.Model"{
+	function init() {
 			super.init();
 
 			// Set
@@ -10,6 +9,4 @@
 			belongsTo(name="Video", foreignKey="videoid");
 			belongsTo(name="VideoCategory", foreignKey="videocategoryid", joinType="outer");
 		}
-	</cfscript>
-
-</cfcomponent>
+}

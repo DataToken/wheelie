@@ -1,5 +1,4 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			super.init();
 
@@ -10,6 +9,4 @@
 			belongsTo(name="User", foreignKey="userid");
 			belongsTo(name="UserTag", foreignKey="categoryid");
 		}
-	</cfscript>
-
-</cfcomponent>
+}

@@ -1,5 +1,4 @@
-
-	<style type="text/css">
+<style type="text/css">
 /* Client-specific Styles */
 ##outlook a {
 	padding: 0;

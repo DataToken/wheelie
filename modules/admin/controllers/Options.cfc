@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="_main"
-	{
+component extends="_main"{
 		function init() {
 			super.init();
 		}
@@ -15,5 +13,4 @@
 			flashInsert(success="Saved successfully.");
 			redirectTo(route="admin~Action", module="admin", controller="options", action="index");
 		}
-	}
-</cfscript>
+}

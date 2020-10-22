@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -92,4 +90,3 @@ component extends="_main" output="false"
 		redirectTo(route="admin~Index", controller="sites");
 	}
 }
-</cfscript>

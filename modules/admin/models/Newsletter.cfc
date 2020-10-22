@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="models.Model"
-	{
+component extends="models.Model"{
 		function init() {
 			// Set
 			table("newsletters");
@@ -13,4 +11,3 @@
 			super.init();
 		}
 	}
-</cfscript>

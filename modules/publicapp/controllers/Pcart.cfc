@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 		filters(through="checkCartExists");
@@ -32,4 +30,3 @@ component extends="_main" output="false"
 		}
 	}
 }
-</cfscript>

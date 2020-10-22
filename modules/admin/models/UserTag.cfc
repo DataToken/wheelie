@@ -1,12 +1,11 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			// Other
-			super.init();
+			super.init(); 
 
 			// Properties
 			property(name="categoryType", defaultValue="user");
-			this.setWhere = setWhere;
+			this.setWhere = setWhere; 
 
 			// Set
 			table("categories");
@@ -33,5 +32,4 @@
 				pluralShort		= "Tags"
 			};
 		}
-	</cfscript>
-</cfcomponent>
+}

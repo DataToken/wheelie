@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -151,7 +149,7 @@ component extends="_main" output="false"
 		var loc = {};
 
 		if(arguments.containsKey("filename")) {
-			var result = fileUpload(getTempDirectory(),arguments.field, "image/*", "makeUnique");
+			var result = fileUpload(getTempDirectory(),arguments.field, "image/", "makeUnique");
 
 			if(result.fileWasSaved) {
 				var theFile = result.serverdirectory & "/" & result.serverFile;
@@ -164,7 +162,7 @@ component extends="_main" output="false"
 					try {
 						imageWrite(img,fullFile,1,1);
 						fileDelete(theFile);
-					} catch(e) {
+					} catch(any e) {
 						flashInsert(error="File Error: #e.message#");
 						return false;
 					}
@@ -269,4 +267,3 @@ component extends="_main" output="false"
 		super.preHandler();
 	}
 }
-</cfscript>

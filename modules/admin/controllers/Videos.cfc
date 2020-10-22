@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -355,7 +353,7 @@ component extends="_main" output="false"
 		loc.video = arguments.video;
 
 		if(!isNull(loc.video.id)) {
-			var result = fileUpload(getTempDirectory(),arguments.field, "image/*", "makeUnique");
+			var result = fileUpload(getTempDirectory(),arguments.field, "image/", "makeUnique");
 			if(result.fileWasSaved) {
 				var theFile = result.serverdirectory & "/" & result.serverFile;
 				var newFile = expandPath("#info.uploadsPath#videos/thumbs/#loc.video.id#.jpg");
@@ -370,7 +368,7 @@ component extends="_main" output="false"
 						imageScaleToFit(img, 250, 250);
 						imageWrite(img,newFile,1);
 						fileDelete(theFile);
-					} catch(e) {
+					} catch(any e) {
 						return false;
 					}
 					return true;
@@ -379,4 +377,3 @@ component extends="_main" output="false"
 		}
 	}
 }
-</cfscript>

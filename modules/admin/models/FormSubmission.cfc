@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="models.Model"
-	{
+component extends="models.Model"{
 		function init() {
 			super.init();
 			this.setWhere = setWhere;
@@ -9,4 +7,3 @@
 			return wherePermission('FormSubmission');
 		}
 	}
-</cfscript>

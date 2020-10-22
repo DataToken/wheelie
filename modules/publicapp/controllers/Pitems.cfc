@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -142,7 +140,7 @@ component extends="_main" output="false"
 			if(jsonResult.containsKey("countryCode") AND jsonResult.countryCode NEQ "US") {
 				throw("Sorry, there was an error. Please try again later.");
 			}
-		} catch(e) {
+		} catch(any e) {
 		}
 
 		if(findNoCase('fifa', itemParams.name)) {
@@ -247,7 +245,7 @@ component extends="_main" output="false"
 						imageWrite(imgLg,lgFile,1);
 
 						fileDelete(theFile);
-					} catch(e) {
+					} catch(any e) {
 						flashInsert(error="There was an issue with the image you tried to upload. Try uploading a JPG.");
 						return false;
 					}
@@ -258,4 +256,3 @@ component extends="_main" output="false"
 		return false;
 	}
 }
-</cfscript>

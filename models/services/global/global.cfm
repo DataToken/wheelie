@@ -1,5 +1,5 @@
 ﻿	<!--- Globals: All values and functions are available to all parts of the app --->
-	<cfscript>
+<cfscript>
 		// Set app functions
 		// ---------------------------------------
 
@@ -43,4 +43,4 @@
 	
 		// Custom Overrides
 	include "/models/services/global/app/app.cfm";
-	</cfscript>
+</cfscript>

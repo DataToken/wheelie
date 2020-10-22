@@ -1,6 +1,4 @@
-<cfscript>
-component output="false" extends="modules.public.controllers._main"
-{
+component output="false" extends="modules.public.controllers._main"{
 	function init() {
 		super.init();
 	}
@@ -44,4 +42,3 @@ component output="false" extends="modules.public.controllers._main"
 		return cartQuery;
 	}
 }
-</cfscript>

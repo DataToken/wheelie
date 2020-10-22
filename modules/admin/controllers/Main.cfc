@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main"
-{
+component extends="_main" {
 	function init() {
 		super.init();
 	}
@@ -73,7 +71,7 @@ component extends="_main"
 		// vuild form
 		savecontent variable="formfields" {
 			for(var column in columns) {
-				include template="/modules/adminapp/views/_templates/formfield.cfm";
+				include "/modules/adminapp/views/_templates/formfield.cfm";
 			}
 		}
 		nameVars["@formfields@"] = formfields;
@@ -173,4 +171,3 @@ component extends="_main"
 		}
 	}
 }
-</cfscript>

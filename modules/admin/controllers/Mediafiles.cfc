@@ -1,6 +1,4 @@
-<cfscript>
-component extends="_main" output="false"
-{
+component extends="_main" output="false"{
 	function init() {
 		super.init();
 	}
@@ -50,7 +48,7 @@ component extends="_main" output="false"
 
 		if(!isNull(arguments.filename)) {
 			if(arguments.containsKey("field")) {
-				var result = fileUpload(getTempDirectory(),arguments.field, "image/*", "makeUnique");
+				var result = fileUpload(getTempDirectory(),arguments.field, "image/", "makeUnique");
 				var theFile = result.serverdirectory & "/" & result.serverFile;
 			}else {
 				var result.fileWasSaved = true;
@@ -93,7 +91,7 @@ component extends="_main" output="false"
 						imageWrite(img,thumbFile,1);
 
 						fileDelete(theFile);
-					} catch(e) {
+					} catch(any e) {
 						writeDump(e); abort;
 						flashInsert(error="There was an issue with the image you tried to upload. Try uploading a JPG.");
 						return false;
@@ -241,4 +239,3 @@ component extends="_main" output="false"
 		writeOutput(serializeJSON(response)); abort;
 	}
 }
-</cfscript>

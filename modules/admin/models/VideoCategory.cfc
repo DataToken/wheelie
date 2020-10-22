@@ -1,5 +1,4 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			super.init();
 
@@ -33,5 +32,4 @@
 				pluralShort		= "Categories"
 			};
 		}
-	</cfscript>
-</cfcomponent>
+}

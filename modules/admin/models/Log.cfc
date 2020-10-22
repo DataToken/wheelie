@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="models.Model"
-	{
+component extends="models.Model"{
 		function init() {
 			super.init();
 			hasOne("User");
@@ -10,5 +8,4 @@
 		function setWhere() {
 			return wherePermission('log');
 		}
-	}
-</cfscript>
+}

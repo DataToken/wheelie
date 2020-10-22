@@ -1,4 +1,3 @@
-<cfscript>
 component extends="_main" output="false"
 {
 	function init() {
@@ -151,4 +150,3 @@ component extends="_main" output="false"
 		}
 	}
 }
-</cfscript>

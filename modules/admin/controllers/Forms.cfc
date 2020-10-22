@@ -1,4 +1,3 @@
-<cfscript>
 component extends="_main" output="false"
 {
 	function init() {
@@ -44,7 +43,7 @@ component extends="_main" output="false"
 					{
 						isSpamFromBadCountry = true;
 					}
-				} catch(e) {
+				} catch(any e) {
 				}
 			}
 
@@ -117,7 +116,7 @@ component extends="_main" output="false"
 						customFormHandler = getAdminTemplate("formhandling");
 						if(len(customFormHandler))
 						{
-							include template="#customFormHandler#";
+							include "#customFormHandler#";
 						}
 					}
 
@@ -275,4 +274,3 @@ component extends="_main" output="false"
 		selectedccformusers = ValueList(selectedccformusers.userid);
 	}
 }
-</cfscript>

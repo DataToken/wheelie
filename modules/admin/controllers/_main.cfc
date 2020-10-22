@@ -1,4 +1,3 @@
-<cfscript>
 component output="false" extends="controllers.Controller"
 {
 	function init() {
@@ -144,4 +143,3 @@ component output="false" extends="controllers.Controller"
 		}
 	}
 }
-</cfscript>

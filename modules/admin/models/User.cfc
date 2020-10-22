@@ -1,5 +1,4 @@
-component extends="models.Model"
-{
+component extends="models.Model"{
 	function init() {
 		// Before after save
 		beforeSave("sanitize,checkAndSecurePassword,preventRoleHacking");

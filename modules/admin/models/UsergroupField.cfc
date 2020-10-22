@@ -1,5 +1,4 @@
-<cfcomponent extends="models.Model">
-	<cfscript>
+component extends="models.Model"{
 		function init() {
 			// Set
 			table("metafields");
@@ -43,5 +42,4 @@
 				pluralShort		= "Fields"
 			};
 		}
-	</cfscript>
-</cfcomponent>
+}

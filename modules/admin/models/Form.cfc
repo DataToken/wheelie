@@ -1,4 +1,3 @@
-<cfscript>
 	component extends="models.Model"
 	{
 		function init() {
@@ -9,4 +8,3 @@
 			return wherePermission('Form');
 		}
 	}
-</cfscript>

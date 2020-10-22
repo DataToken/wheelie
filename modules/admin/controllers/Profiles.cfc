@@ -1,6 +1,4 @@
-<cfscript>
-	component extends="_main"
-	{
+component extends="_main"{
 		function init() {
 			super.init();
 		}
@@ -18,9 +16,8 @@
 					foreignid = user.userid,
 					metafieldType = "usergroupfield"
 				);
-			} catch(e) {
+			} catch(any e) {
 				golocation("/#application.info.adminUrlPath#/users/edit/#params.id#"); abort;
 			}
 		}
 	}
-</cfscript>
