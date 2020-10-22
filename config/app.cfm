@@ -1,10 +1,10 @@
 <cfscript>
-	include template="/models/services/global/app/systemvars.cfm";
+	include "/models/services/global/app/systemvars.cfm";
 	this.runtimeconfig = setRuntimeSettings();
-
 	this.applicationTimeout = createTimespan(30,0,0,0);
 	this.sessionManagement 	= "true";
 	this.sessionTimeout 	= createTimeSpan(30,0,0,0);
+	
 	this.name 				= "Wheelie";
 	rootPath 				= getDirectoryFromPath(getBaseTemplatePath());
 

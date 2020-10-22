@@ -1,3 +1,3 @@
 <cfcomponent output="false">
-	<cfinclude template="wheels/functions.cfm">
+	<cfinclude template="/wheels/functions.cfm">
 </cfcomponent>

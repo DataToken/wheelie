@@ -1,14 +1,16 @@
 <cfscript>
+	
 	function getSiteSetting(required string name,string default="") {
 		return application.runtimeconfig.containsKey(name) ? application.runtimeconfig[name] : arguments.default;
 	}
+	
 	function setRuntimeSettings() {
 		if(!application.containsKey("runtimeconfig") OR !isNull(url.reload)) {
 			application.runtimeconfig = {};
 
 			try {
 				// Location to your properties file
-				var pFile = expandPath('config/system.properties');
+				var pFile = expandPath('/config/system.properties');
 
 				// Init Props
 				var props = CreateObject("java","java.util.Properties").init();

@@ -1,7 +1,7 @@
 <cfscript>
 
 	// Moved css/js to assets folder
-	set(dataSourceName			= application.wheels.dataSourceName);
+	//set(dataSourceName			= application.wheels.dataSourceName);
 	set(stylesheetPath			= "assets");
 	set(javascriptPath			= "assets");
 	set(assetQueryString		= false); // If true, Prevents browser from caching js/css assets
